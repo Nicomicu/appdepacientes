@@ -7,7 +7,7 @@ function App() {
 
   return (
     <>
-
+<p className="font-bold">soy un genio</p>
    <Header />
    <Formulario />
    <ListadosPacientes />

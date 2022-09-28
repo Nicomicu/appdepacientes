@@ -3,7 +3,7 @@ function Header() {
 
 
   return (
-    <h1 className='text-4xl font-bold'> probando desde el header</h1>
+    <h1 className='text-4xl text-indigo-600'> probando desde el header</h1>
   )
 }
 
