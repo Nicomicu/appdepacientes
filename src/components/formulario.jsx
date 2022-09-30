@@ -37,7 +37,7 @@ const Formulario = () => {
 
         <div className="mb-5">
           <label htmlFor="email" className="block font-black uppercase">
-            Nombre Propietario:
+            Email del Propietario:
           </label>
 
           <input
@@ -67,7 +67,7 @@ const Formulario = () => {
           <textarea
             id="sintomas"
             className="border-2 w-full p-2 mt-2 placeholder-gray-400 rounded-md"
-            placeholder="Descriibe los Sintomas"></textarea>
+            placeholder="Describe los Sintomas"></textarea>
         </div>
 
         <input
@@ -77,7 +77,7 @@ const Formulario = () => {
         />
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default Formulario;
+export default Formulario
