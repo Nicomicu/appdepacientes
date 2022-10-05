@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const header = () => {
   return (
@@ -8,6 +8,6 @@ const header = () => {
         <span className="text-indigo-600">Veterinario</span>
       </h1>
     </>
-  );
-};
-export default header;
+  )
+}
+export default header
