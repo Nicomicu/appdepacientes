@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react"
 import Error from "./Error"
 
-const Formulario = ({ paciente, setPacientes }) => {
+const Formulario = ({ paciente, setPacientes, pacientes }) => {
   const [nombre, setNombre] = useState("")
   const [Propietario, setPropietario] = useState("")
   const [email, setEmail] = useState("")
@@ -10,6 +10,16 @@ const Formulario = ({ paciente, setPacientes }) => {
 
   //  Error en la validacion//
   const [error, setError] = useState(false)
+
+  useEffect(() => {
+    if (Object.keys(pacientes).length > 0) {
+      setNombre(pacientes.nombre)
+      setPropietario(pacientes.Propietario)
+      setEmail(pacientes.email)
+      setFecha(pacientes.fecha)
+      setSintomas(pacientes.sintomas)
+    }
+  }, [pacientes])
 
   const generarId = () => {
     const random = Math.random().toString(36).substr(2)
