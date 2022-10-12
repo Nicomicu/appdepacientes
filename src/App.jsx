@@ -4,18 +4,18 @@ import Formulario from "./components/Formulario"
 import ListadosPacientes from "./components/ListadosPacientes"
 
 function App() {
-  const [paciente, setPacientes] = useState([])
-  const [pacientes, setPaciente] = useState({})
+  const [pacientes, setPacientes] = useState([])
+  const [paciente, setPaciente] = useState({})
   return (
     <div className="container mx-auto mt-20">
       <Header />
       <div className="mt-12 md:flex">
         <Formulario
-          paciente={paciente}
-          setPacientes={setPacientes}
           pacientes={pacientes}
+          setPacientes={setPacientes}
+          paciente={paciente}
         />
-        <ListadosPacientes paciente={paciente} setPaciente={setPaciente} />
+        <ListadosPacientes pacientes={pacientes} setPaciente={setPaciente} />
       </div>
     </div>
   )
