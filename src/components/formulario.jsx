@@ -16,7 +16,7 @@ const Formulario = ({ pacientes, setPacientes, paciente, setPaciente }) => {
       setNombre(paciente.nombre)
       setPropietario(paciente.Propietario)
       setEmail(paciente.email)
-      setFecha(paciente.fecha)
+      setFecha(paciente.fecha)                                    
       setSintomas(paciente.sintomas)
     }
   }, [paciente])
